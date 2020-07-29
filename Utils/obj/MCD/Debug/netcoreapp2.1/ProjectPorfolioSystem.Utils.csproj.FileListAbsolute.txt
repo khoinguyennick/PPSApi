@@ -1,0 +1,10 @@
+D:\FPT\Cloud\PPSAPI\Utils\bin\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.deps.json
+D:\FPT\Cloud\PPSAPI\Utils\bin\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.runtimeconfig.json
+D:\FPT\Cloud\PPSAPI\Utils\bin\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.runtimeconfig.dev.json
+D:\FPT\Cloud\PPSAPI\Utils\bin\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.dll
+D:\FPT\Cloud\PPSAPI\Utils\bin\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.pdb
+D:\FPT\Cloud\PPSAPI\Utils\obj\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.csprojAssemblyReference.cache
+D:\FPT\Cloud\PPSAPI\Utils\obj\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.AssemblyInfoInputs.cache
+D:\FPT\Cloud\PPSAPI\Utils\obj\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.AssemblyInfo.cs
+D:\FPT\Cloud\PPSAPI\Utils\obj\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.dll
+D:\FPT\Cloud\PPSAPI\Utils\obj\MCD\Debug\netcoreapp2.1\ProjectPorfolioSystem.Utils.pdb

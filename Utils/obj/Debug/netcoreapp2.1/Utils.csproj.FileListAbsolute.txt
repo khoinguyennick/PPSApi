@@ -1,0 +1,8 @@
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\bin\Debug\netcoreapp2.1\Utils.deps.json
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\bin\Debug\netcoreapp2.1\Utils.dll
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\bin\Debug\netcoreapp2.1\Utils.pdb
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\obj\Debug\netcoreapp2.1\Utils.csproj.CoreCompileInputs.cache
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\obj\Debug\netcoreapp2.1\Utils.AssemblyInfoInputs.cache
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\obj\Debug\netcoreapp2.1\Utils.AssemblyInfo.cs
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\obj\Debug\netcoreapp2.1\Utils.dll
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Utils\obj\Debug\netcoreapp2.1\Utils.pdb

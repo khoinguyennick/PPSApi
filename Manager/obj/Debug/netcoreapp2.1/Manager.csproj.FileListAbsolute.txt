@@ -1,0 +1,10 @@
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\bin\Debug\netcoreapp2.1\Manager.deps.json
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.json
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\bin\Debug\netcoreapp2.1\Manager.runtimeconfig.dev.json
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\bin\Debug\netcoreapp2.1\Manager.dll
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\bin\Debug\netcoreapp2.1\Manager.pdb
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\obj\Debug\netcoreapp2.1\Manager.csproj.CoreCompileInputs.cache
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfoInputs.cache
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\obj\Debug\netcoreapp2.1\Manager.AssemblyInfo.cs
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\obj\Debug\netcoreapp2.1\Manager.dll
+D:\Work\ProjectPorfolioSystem\ProjectPorfolioSystem\Manager\obj\Debug\netcoreapp2.1\Manager.pdb
