@@ -1,22 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Models;
 using ProjectPorfolioSystem.Manager.Implementations;
@@ -42,8 +36,30 @@ namespace ProjectPorfolioSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<DBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContextConnection")));
-            services.AddDbContext<ProjectPorfolioSystemContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContextConnection")));
+            
+            // Create connectiong string from environment variables
+            var sqlServerHost = Environment.GetEnvironmentVariable("SQLSERVER_HOST");
+            var sqlServerPort = Environment.GetEnvironmentVariable("SQLSERVER_PORT");
+            var sqlServerDbName = Environment.GetEnvironmentVariable("SQLSERVER_DBNAME");
+            var sqlServerUserName = Environment.GetEnvironmentVariable("SQLSERVER_USER");
+            var sqlServerPassword = Environment.GetEnvironmentVariable("SQLSERVER_PASSWORD");
+
+            if (string.IsNullOrEmpty(sqlServerHost) || string.IsNullOrEmpty(sqlServerPort) ||
+                string.IsNullOrEmpty(sqlServerDbName) || string.IsNullOrEmpty(sqlServerUserName) ||
+                string.IsNullOrEmpty(sqlServerPassword))
+            {
+                services.AddDbContext<ProjectPorfolioSystemContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContextConnection")));
+                services.AddDbContext<DBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContextConnection")));
+            }
+            else
+            {
+                var connectionString =
+                    $"Server=tcp:{sqlServerHost},{sqlServerPort};Initial Catalog={sqlServerDbName};Persist Security Info=False;User ID={sqlServerUserName};Password={sqlServerPassword};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
+                services.AddDbContext<ProjectPorfolioSystemContext>(options => options.UseSqlServer(connectionString));
+                services.AddDbContext<DBContext>(options => options.UseSqlServer(connectionString));
+            }
+
+
             #region Identity
             // ===== Add Identity ========
             services.AddIdentity<IdentityUser, IdentityRole>()
@@ -163,6 +179,7 @@ namespace ProjectPorfolioSystem
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Project Porfolio System API");
                 c.DocExpansion(DocExpansion.None);
+                c.RoutePrefix = string.Empty;
             });
             #endregion
             // ===== Create tables ======

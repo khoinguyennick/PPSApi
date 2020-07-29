@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="ProjectPorfolioSystem20200630144446" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^T:\\cloud_prj\\PPSAPI\\ProjectPorfolioSystem\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
